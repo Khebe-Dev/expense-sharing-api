@@ -88,6 +88,8 @@ public class WeShareServer {
             config.staticFiles.add(PUBLIC_DIR, Location.CLASSPATH);
         });
 
+        appServer.get("/health", ctx -> ctx.json(java.util.Map.of("status", "UP")));
+
         appServer.routes(configureApi());
         Routes.configure(this);
 

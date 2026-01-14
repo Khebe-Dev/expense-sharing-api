@@ -17,4 +17,4 @@ This project uses GitHub Actions to automatically run `mvn clean test` on every 
 ## Running locally
 ```bash
 mvn clean test
-mvn exec:java
+mvn exec:java -D"exec.mainClass=weshare.server.WeShareServer"
