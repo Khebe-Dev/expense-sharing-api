@@ -2,7 +2,14 @@
 
 # Expense Sharing API
 
-A Java (Javalin) REST API for expense sharing, built with Maven, tested with JUnit, and integrated with GitHub Actions CI.
+A Java-based expense sharing application built with Javalin, exposing RESTful APIs and a web UI for managing shared expenses and payments.
+The application is deployed on AWS EC2 and documented using Swagger (OpenAPI).
+
+## Live Demo (AWS EC2)
+- Web App: http://13.50.78.119:5050/
+- Swagger UI: http://13.50.78.119:5050/swagger
+- Health Check: http://13.50.78.119:5050/health
+
 
 ## Project Overview 
 Expense Sharing APi is a Java-based RESTful backend that enables users to:
@@ -19,10 +26,12 @@ This project uses GitHub Actions to automatically run `mvn clean test` on every 
 - Java 17 
 - Javalin (REST framework)
 - Maven
-- JUnit
+- JUnit5
 - Docker
 - GitHub Actions (CI)
 - Swagger (OpenAPI Documentation)
+- AWS EC2
+- Linux (systemd)
 
 ## Running locally
 ```bash
@@ -58,3 +67,7 @@ http://localhost:5050/swagger
 - POST /api/expenses - create expense 
 - POST /api/paymentrequests - request payment
 - POST /api/payments - settle payment
+
+## Deployment (EC2)
+This API is deployed on an AWS EC2 instance with fixed Elastic IP for stable public access and runs as a systemd service.
+Updates are packaged into a shaded JAR and copied to the server, then the service is restarted.
