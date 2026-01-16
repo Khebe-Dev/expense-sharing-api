@@ -1,4 +1,4 @@
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b8a1d147-e58c-499d-926d-d29d3c2ec898" />![CI](https://github.com/Khebe-Dev/expense-sharing-api/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Khebe-Dev/expense-sharing-api/actions/workflows/ci.yml/badge.svg)
 
 # Expense Sharing API
 
