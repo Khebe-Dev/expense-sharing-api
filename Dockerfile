@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-alpine
+FROM eclipse-temurin:17
 COPY target/app.jar /app.jar
 # This is the port that your javalin application will listen on
 EXPOSE 5050

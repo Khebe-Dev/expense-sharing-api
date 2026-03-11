@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>WeShare</title>
-    <meta name="description" content="">
+    <meta name="description" content="Split expenses with friends, effortlessly.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
@@ -11,18 +11,27 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-<h1>WeShare</h1>
-<p>You are not logged in!</p>
+<body class="landing">
+    <div class="landing-wrapper">
+        <div class="landing-hero">
+            <h1 class="landing-title">WeShare</h1>
+            <p class="landing-tagline">Split expenses with friends, effortlessly.</p>
+            <ul class="landing-features">
+                <li>✅ Track shared expenses</li>
+                <li>✅ Send & receive payment requests</li>
+                <li>✅ Stay on top of who owes what</li>
+            </ul>
+        </div>
 
-<main>
-    <div>
-        <form method="post" action="/login.action" enctype="application/x-www-form-urlencoded">
-            <label for="email">Enter your email</label>
-            <input name="email" id="email" type="email" autofocus required>
-            <input id="submit" type="submit" value="Login"/>
-        </form>
+        <div class="landing-card">
+            <h2>Sign In</h2>
+            <p class="landing-card-subtitle">Enter your email to get started</p>
+            <form method="post" action="/login.action" enctype="application/x-www-form-urlencoded">
+                <label for="email">Email address</label>
+                <input name="email" id="email" type="email" placeholder="you@example.com" autofocus required>
+                <input type="submit" value="Sign In →">
+            </form>
+        </div>
     </div>
-</main>
 </body>
 </html>
